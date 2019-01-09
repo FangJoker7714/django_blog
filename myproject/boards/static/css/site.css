@@ -1,0 +1,11 @@
+.navbar-brand {
+  font-family: 'Charm', cursive;
+}
+
+.navbar-brand {
+  font-size: 200%
+}
+
+body {
+  background-image: url(../img/morocco.png);
+}

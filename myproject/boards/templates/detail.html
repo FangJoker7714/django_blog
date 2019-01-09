@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+    <title></title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <div class="container">
+        <a class="navbar-brand">Fang's blog</a>
+      </div>
+    </nav>
+    <br>
+    <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">ホーム</a></li>
+        <li class="breadcrumb-item"><a href="topics">記事一覧</a></li>
+        <li class="breadcrumb-item"><a href="https://twitter.com/F_reincarnation">Twitter</a></li>
+        <li class="breadcrumb-item"><a href=
+          "https://www.youtube.com/channel/UCPEzh4r5v-6elOyRH4Hcw7g?view_as=subscriber">Youtubeチャンネル</a></li>
+      </ol>
+    </nav>
+    <div class="alert alert-primary" role="alert">
+      <font color="black">
+      {{ board.name }}
+    </font>
+    </div>
+      <div class="alert alert-light" role="alert">
+        <font color="black">
+        <div>{{ board.description | linebreaksbr }}</div>
+        </font>
+      </div>
+    </body>
+</html>
